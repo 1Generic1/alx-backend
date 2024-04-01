@@ -7,6 +7,7 @@ import csv
 from typing import List
 from math import ceil
 
+
 def index_range(page, page_size):
     """
     Calculate the start and end indices for a
@@ -15,6 +16,7 @@ def index_range(page, page_size):
     start_index = (page - 1) * page_size
     end_index = start_index + page_size - 1
     return start_index, end_index
+
 
 class Server:
     """Server class to paginate a database of popular baby names.
