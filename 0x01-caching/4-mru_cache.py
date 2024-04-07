@@ -10,9 +10,11 @@ class MRUCache(BaseCaching):
     a caching system using MRU eviction """
 
     def __init__(self):
+        """ Initializes the MRUCache """
         super().__init__()
 
     def put(self, key, item):
+        """ Add an item to the cache """
         if key is None or item is None:
             return
 
